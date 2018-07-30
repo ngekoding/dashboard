@@ -1,20 +1,33 @@
-.content
+.right-content
 	width: $content-width
 	margin-left: $sidebar-width
+	background-color: $primary-color-light
 
 	.navbar
 		+box-shadow(0, 0, 8px, rgba(0,0,0,.2))
+		background-color: #fff
 		
 		&.fixed-top
 			left: $sidebar-width
 
 		.dropdown-menu
+			+border-radius-all(0)
 			right: 0
 			left: auto
 			top: calc(100% + 5px)
 			position: absolute
-			+border-radius-all(0)
 
 		.img-profile
 			width: 30px
 			margin-right: 10px
+
+	.content 
+		padding: 20px
+		padding-top: $header-height + 30px
+
+		.summary-wrap
+			+box-shadow(0,0,2px,rgba(0,0,0,.1))
+			+border-radius-all(5px)
+			background-color: #fff
+			padding: 15px
+			box-sizing: border-box

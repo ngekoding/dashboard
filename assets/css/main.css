@@ -9,84 +9,149 @@
 /* line 7, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
 .sidebar header {
   height: 62px;
+  width: 200px;
   background-color: #262D36;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
-/* line 14, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+/* line 16, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
 .sidebar header .logo {
   height: 25px;
 }
 
-/* line 18, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+/* line 19, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav {
+  padding-top: 62px;
+}
+
+/* line 21, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
 .sidebar .sidebar-nav .menu {
   list-style: none;
   padding-left: 20px;
   font-size: 14px;
 }
 
-/* line 23, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
-.sidebar .sidebar-nav .menu li {
-  line-height: 25px;
-}
-
 /* line 26, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
-.sidebar .sidebar-nav .menu li a {
-  color: #EEF1F4;
+.sidebar .sidebar-nav .menu li {
+  line-height: 30px;
 }
 
 /* line 29, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
-.sidebar .sidebar-nav .menu li a:hover {
-  text-decoration: none;
+.sidebar .sidebar-nav .menu li.active > .submenu {
+  display: block;
 }
 
 /* line 32, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 35, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 39, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
 .sidebar .sidebar-nav .menu .fa {
   width: 22px;
 }
 
-/* line 35, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+/* line 42, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
 .sidebar .sidebar-nav .menu .submenu {
+  display: none;
   list-style: none;
   padding-left: 27px;
   font-size: 12px;
 }
 
 /* line 1, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
-.content {
+.right-content {
   width: calc(100% - $sidebar-width);
   margin-left: 200px;
+  background-color: #EEF1F4;
 }
 
-/* line 5, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
-.content .navbar {
+/* line 6, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .navbar {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
-/* line 8, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
-.content .navbar.fixed-top {
+/* line 10, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .navbar.fixed-top {
   left: 200px;
 }
 
-/* line 11, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
-.content .navbar .dropdown-menu {
+/* line 13, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .navbar .dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   right: 0;
   left: auto;
   top: calc(100% + 5px);
   position: absolute;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
 }
 
-/* line 18, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
-.content .navbar .img-profile {
+/* line 20, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .navbar .img-profile {
   width: 30px;
   margin-right: 10px;
+}
+
+/* line 24, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .content {
+  padding: 20px;
+  padding-top: 92px;
+}
+
+/* line 28, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.right-content .content .summary-wrap {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* line 1, /Users/nur/Devs/WebProjects/dashboard/assets/sass/modules/_datatables.sass */
+.table-wrap {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+/* line 8, /Users/nur/Devs/WebProjects/dashboard/assets/sass/modules/_datatables.sass */
+.table-wrap .table.datatable thead {
+  background-color: #EEF1F4;
+  color: #7B858D;
+}
+
+/* line 12, /Users/nur/Devs/WebProjects/dashboard/assets/sass/modules/_datatables.sass */
+.table-wrap .dataTables_length,
+.table-wrap .dataTables_info {
+  padding-left: 15px;
+}
+
+/* line 16, /Users/nur/Devs/WebProjects/dashboard/assets/sass/modules/_datatables.sass */
+.table-wrap .dataTables_filter,
+.table-wrap .dataTables_paginate {
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=../css/main.map */

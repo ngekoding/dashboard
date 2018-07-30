@@ -6,33 +6,41 @@
 
 	header
 		height: $header-height
+		width: $sidebar-width
 		background-color: $primary-color-dark
 		display: flex
 		align-items: center
 		justify-content: center
+		position: fixed
 
 		.logo 
 			height: 25px
 
 	.sidebar-nav
+		padding-top: $header-height
 		.menu
 			list-style: none
 			padding-left: 20px
 			font-size: 14px
 			
 			li 
-				line-height: 25px
+				line-height: 30px
 				
+				&.active > .submenu
+					display: block
+					
 				a
-					color: $primary-color-light
+					color: rgba(255,255,255,.8)
 				
 					&:hover 
 						text-decoration: none
+						color: #fff
 
 			.fa 
 				width: 22px
 
 			.submenu
+				display: none
 				list-style: none
 				padding-left: 27px
 				font-size: 12px
