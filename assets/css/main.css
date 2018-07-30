@@ -1,0 +1,92 @@
+/* line 1, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #475260;
+  float: left;
+}
+
+/* line 7, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar header {
+  height: 62px;
+  background-color: #262D36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 14, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar header .logo {
+  height: 25px;
+}
+
+/* line 18, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+/* line 23, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu li {
+  line-height: 25px;
+}
+
+/* line 26, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu li a {
+  color: #EEF1F4;
+}
+
+/* line 29, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu li a:hover {
+  text-decoration: none;
+}
+
+/* line 32, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu .fa {
+  width: 22px;
+}
+
+/* line 35, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_sidebar.sass */
+.sidebar .sidebar-nav .menu .submenu {
+  list-style: none;
+  padding-left: 27px;
+  font-size: 12px;
+}
+
+/* line 1, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.content {
+  width: calc(100% - $sidebar-width);
+  margin-left: 200px;
+}
+
+/* line 5, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.content .navbar {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* line 8, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.content .navbar.fixed-top {
+  left: 200px;
+}
+
+/* line 11, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.content .navbar .dropdown-menu {
+  right: 0;
+  left: auto;
+  top: calc(100% + 5px);
+  position: absolute;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 18, /Users/nur/Devs/WebProjects/dashboard/assets/sass/layouts/_content.sass */
+.content .navbar .img-profile {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=../css/main.map */

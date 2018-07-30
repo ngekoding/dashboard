@@ -1,0 +1,20 @@
+.content
+	width: $content-width
+	margin-left: $sidebar-width
+
+	.navbar
+		+box-shadow(0, 0, 8px, rgba(0,0,0,.2))
+		
+		&.fixed-top
+			left: $sidebar-width
+
+		.dropdown-menu
+			right: 0
+			left: auto
+			top: calc(100% + 5px)
+			position: absolute
+			+border-radius-all(0)
+
+		.img-profile
+			width: 30px
+			margin-right: 10px

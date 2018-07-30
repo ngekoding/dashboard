@@ -1,0 +1,40 @@
+.sidebar
+	width: 200px
+	min-height: 100vh
+	background-color: $primary-color
+	float: left
+
+	header
+		height: $header-height
+		background-color: $primary-color-dark
+		display: flex
+		align-items: center
+		justify-content: center
+
+		.logo 
+			height: 25px
+
+	.sidebar-nav
+		.menu
+			list-style: none
+			padding-left: 20px
+			font-size: 14px
+			
+			li 
+				line-height: 25px
+				
+				a
+					color: $primary-color-light
+				
+					&:hover 
+						text-decoration: none
+
+			.fa 
+				width: 22px
+
+			.submenu
+				list-style: none
+				padding-left: 27px
+				font-size: 12px
+
+
