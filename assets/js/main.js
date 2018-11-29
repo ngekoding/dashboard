@@ -35,4 +35,14 @@ $(document).ready(function() {
         calculateSidebarHeight();
     }
   });
+
+  $('.check-all').change(function() {
+    var checked = $(this).is(':checked');
+    $('table.datatable').DataTable().rows().iterator('row', function(context, index){
+      var node = $(this.row(index).node()); 
+      node.find('input[type="checkbox"]').prop('checked', checked);
+    });
+  });
+
 });
+
